@@ -118,7 +118,6 @@ main{
 .absoluteTopRight{
     font-size: 30px;
     position: absolute;
-    z-index: 4;
     top: 5px;
     right: 0;
     background-color: white;
@@ -145,9 +144,12 @@ main{
     font-size: 12px;
 }
 
+.favourite{
+    z-index: 4;
+}
 .absoluteTopRight:hover .favourite{
     color:red;
 }
-.absoluteTopRight:active .favourite{
+.absoluteTopRight:checked .favourite{
     color:red;
 }
