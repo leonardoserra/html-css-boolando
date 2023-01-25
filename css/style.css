@@ -98,6 +98,7 @@ main{
 }
 
 .col{
+    position: relative;
     width: calc(100% / 3);
     padding:20px;
 }
@@ -129,10 +130,11 @@ main{
 .absoluteTopRight{
     font-size: 30px;
     position: absolute;
-    top: 5px;
-    right: 0;
+    top: 30px;
+    right: 20px;
     background-color: white;
     padding: 5px;
+    z-index: 4;
 }
 
 .absoluteBottomLeft{
@@ -155,15 +157,10 @@ main{
     font-size: 12px;
 }
 
-.favourite{
-    z-index: 4;
-}
+
 .absoluteTopRight:hover .favourite{
     color:red;
     cursor: pointer;
-}
-.absoluteTopRight:active .favourite{
-    color:red;
 }
 
 /*footer*/
