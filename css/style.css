@@ -5,7 +5,11 @@
     box-sizing: border-box;
 }
 
+/*debug*/
 
+.debug{
+    border: 1px dotted violet;
+}
 
 /*general rules*/
 
@@ -69,12 +73,14 @@ main{
 .article{
     position: relative;
     z-index: 0;
+    height: 615px;
 }
 .article img{
     position: absolute;
     z-index: -1;
     top:0;
     left:0;
+    width: 100%;
 }
 
 .sideB{
@@ -91,6 +97,7 @@ main{
 }
 
 .ecoLabel, .discountLabel{
+    display: inline-block;
     position:relative;
     bottom: 0;
     height: 100%;
