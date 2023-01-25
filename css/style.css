@@ -149,7 +149,8 @@ main{
 }
 .absoluteTopRight:hover .favourite{
     color:red;
+    cursor: pointer;
 }
-.absoluteTopRight:checked .favourite{
+.absoluteTopRight:active .favourite{
     color:red;
 }
