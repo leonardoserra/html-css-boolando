@@ -13,6 +13,10 @@
 
 /*general rules*/
 
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+
 .fixedBar{
     display:flex;
     justify-content:space-around;
@@ -44,6 +48,10 @@ a {
     font-weight:bold;
 }
 
+.bold{
+    font-weight: 600;
+}
+
 .product .capsBold{
     font-size:13px;
 }
@@ -69,10 +77,13 @@ a {
     padding: 0 5px;
 }
 
+.gender a:hover{
+    color: rgb(60, 60, 208);
+}
 /*main*/
 
 main{
-    padding-top:200px;
+    padding-top:100px;
 }
 
 .mainContainer{
@@ -153,4 +164,36 @@ main{
 }
 .absoluteTopRight:active .favourite{
     color:red;
+}
+
+/*footer*/
+
+footer{
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h5, footer h6{
+    color:white;
+}
+
+.footerContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 80%;
+}
+
+.infoLegal a, .infoLegal h5{
+    padding: 0 5px;
+}
+
+.footerIcons a{
+    padding: 0 5px;
+}
+
+.footerIcons h6{
+    text-align: center;
 }
