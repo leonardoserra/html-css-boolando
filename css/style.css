@@ -4,3 +4,45 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+.fixedBar{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    width:100%;
+    height: 50px;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: rgb(255, 105, 0);
+    color:white;
+}
+
+/*general rules*/
+a {
+    color:white;
+    text-decoration: none;
+}
+
+/*header*/
+
+.logo{
+    text-align: center;
+}
+
+.booleanLogo{
+    position: relative;
+    right: 50%;
+    width: 100px;
+}
+
+
+.gender a, .menuIcons a{
+    padding: 0 5px;
+}
+
+/*main*/
+main{
+    padding-top:200px;
+}
