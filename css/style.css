@@ -31,6 +31,27 @@ a {
     text-decoration: none;
 }
 
+.smallFont{
+    font-size: 11px;
+}
+
+.redFont{
+    color:red;
+}
+
+.capsBold{
+    text-transform: uppercase;
+    font-weight:bold;
+}
+
+.product .capsBold{
+    font-size:13px;
+}
+
+.barrato{
+    text-decoration: line-through;
+}
+
 /*header*/
 
 .logo{
@@ -72,36 +93,50 @@ main{
 
 .article{
     position: relative;
-    z-index: 0;
+    z-index: 3;
 }
 
 .article img{
     position: relative;
-    z-index: -1;
+    z-index: -2;
     top:0;
     left:0;
     width: 100%;
 }
 
-.sideB{
-    display: none;
+.article .sideB{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+}
+
+.article:hover .sideB{
+    z-index:0;
 }
 
 .absoluteTopRight{
     font-size: 30px;
     position: absolute;
+    z-index: 4;
     top: 5px;
     right: 0;
     background-color: white;
     padding: 5px;
 }
 
+.absoluteBottomLeft{
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+}
+
 .discount{
-    background-color: red;
+    background-color: rgb(255,  0, 0);
 }
 
 .eco{
-    background-color: rgb(0, 255, 0);
+    background-color: rgb(0, 128, 0);
 }
 
 .label{
@@ -110,8 +145,9 @@ main{
     font-size: 12px;
 }
 
-.absoluteBottomLeft{
-    position: absolute;
-    bottom: 20px;
-    left: 0;
+.absoluteTopRight:hover .favourite{
+    color:red;
+}
+.absoluteTopRight:active .favourite{
+    color:red;
 }
